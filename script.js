@@ -59,7 +59,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Función para actualizar la cuenta regresiva
 function updateCountdown() {
-    const eventDate = new Date('2025-11-17T10:00:00').getTime();
+    const eventDate = new Date('2026-03-17T10:00:00').getTime();
     const now = new Date().getTime();
     const distance = eventDate - now;
 
@@ -380,4 +380,5 @@ function shareEvent(platform) {
                 
                 observer.observe(confirmationSection);
             }
+
         });
