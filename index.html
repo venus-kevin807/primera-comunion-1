@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Comunión - Cristhian Camilo Quintero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Overlay para cerrar menú -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">✞ Primera Comunión</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="nav-menu" id="navMenu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#fecha">Fecha</a></li>
+            <li><a href="#cuenta-regresiva">Cuenta regresiva</a></li>
+            <li><a href="#ceremonia">Ceremonia</a></li>
+            <li><a href="#recepcion">Recepción</a></li>
+            <li><a href="#confirmar-asistencia">Confirmar asistencia</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <section class="hero-section" id="inicio">
+            <!-- Decoraciones florales -->
+            <div class="floral-decoration floral-top-left"></div>
+            <div class="floral-decoration floral-top-right"></div>
+            <div class="floral-decoration floral-bottom-left"></div>
+            <div class="floral-decoration floral-bottom-right"></div>
+
+            <div class="golden-frame fade-in">
+                <div class="cross floating">✞</div>
+                <h1 class="title">Mi Primera Comunión</h1>
+                <p class="subtitle">
+                    Hoy es un día muy especial.<br>
+                    En mis ojos brilla una luz porque recibo en mi<br>
+                    corazón con todo mi amor al niño Jesús
+                </p>
+                <h2 class="name">Cristhian Camilo Quintero</h2>
+                
+                <!-- Foto del niño -->
+                <div class="fade-in-delay">
+                    <div class="photo-frame">
+                        <img src="Assets/imagenes/img1.png" alt="Foto de Cristhian Camilo Quintero" class="child-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Fecha -->
+        <section class="date-section" id="fecha">
+            <div class="golden-frame fade-in">
+                <div class="date-container">
+                    <div class="date-decorative-frame">
+                        <div class="date-content">
+                            <div class="month-year">
+                                <span class="month">Noviembre</span>
+                                <span class="year">2025</span>
+                            </div>
+                            <div class="day-circle">
+                                <span class="day-label">Lunes</span>
+                                <span class="day-number">17</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-button">
+                        <span class="schedule-text">Agendar</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Cuenta Regresiva -->
+        <section class="countdown-section" id="cuenta-regresiva">
+            <div class="golden-frame fade-in">
+                <div class="countdown-container">
+                    <h2 class="countdown-title">
+                        <span class="cross">✞</span>
+                        Faltan para mi Primera Comunión
+                    </h2>
+                    <div class="countdown-display">
+                        <div class="countdown-item">
+                            <div class="countdown-circle">
+                                <span class="countdown-number" id="days">0</span>
+                                <span class="countdown-label">Días</span>
+                            </div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-circle">
+                                <span class="countdown-number" id="hours">0</span>
+                                <span class="countdown-label">Horas</span>
+                            </div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-circle">
+                                <span class="countdown-number" id="minutes">0</span>
+                                <span class="countdown-label">Minutos</span>
+                            </div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-circle">
+                                <span class="countdown-number" id="seconds">0</span>
+                                <span class="countdown-label">Segundos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="countdown-message" id="countdownMessage">
+                        <p class="countdown-subtitle">¡Cada momento nos acerca más a este día tan especial!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+               <!-- Sección de Ceremonia -->
+        <section class="ceremony-section" id="ceremonia">
+            <div class="golden-frame fade-in">
+                <h2 class="ceremony-title">
+                    <span class="cross">✞</span>
+                    Ceremonia
+                </h2>
+                
+                <div class="ceremony-content">
+                    <div class="church-illustration">
+                        <svg class="church-svg" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Base de la iglesia -->
+                            <rect x="50" y="80" width="100" height="60" fill="#f4c2c2" stroke="#c8860d" stroke-width="2"/>
+                            
+                            <!-- Torre -->
+                            <rect x="75" y="40" width="50" height="70" fill="#f4c2c2" stroke="#c8860d" stroke-width="2"/>
+                            
+                            <!-- Techo principal -->
+                            <polygon points="45,80 105,60 155,80" fill="#8b4513"/>
+                            
+                            <!-- Techo de la torre -->
+                            <polygon points="70,40 100,25 130,40" fill="#8b4513"/>
+                            
+                            <!-- Cruz en la torre -->
+                            <line x1="100" y1="15" x2="100" y2="30" stroke="#c8860d" stroke-width="3"/>
+                            <line x1="95" y1="20" x2="105" y2="20" stroke="#c8860d" stroke-width="3"/>
+                            
+                            <!-- Ventana circular -->
+                            <circle cx="100" cy="60" r="8" fill="#87ceeb" stroke="#c8860d" stroke-width="1"/>
+                            
+                            <!-- Puerta -->
+                            <rect x="90" y="110" width="20" height="30" fill="#8b4513" rx="10"/>
+                            <circle cx="108" cy="125" r="1" fill="#c8860d"/>
+                            
+                            <!-- Ventanas laterales -->
+                            <rect x="60" y="95" width="10" height="15" fill="#87ceeb" stroke="#c8860d" stroke-width="1"/>
+                            <rect x="130" y="95" width="10" height="15" fill="#87ceeb" stroke="#c8860d" stroke-width="1"/>
+                            
+                            <!-- Detalles arquitectónicos -->
+                            <line x1="55" y1="130" x2="145" y2="130" stroke="#c8860d" stroke-width="1"/>
+                            <line x1="80" y1="100" x2="120" y2="100" stroke="#c8860d" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="ceremony-details">
+                        <div class="time-info">2:00 P.M.</div>
+                        
+                        <div class="location-label">Lugar:</div>
+                        
+                        <div class="church-name">Parroquia La Purísima Concepción</div>
+                        <div class="church-subtitle">Loma el Chocho</div>
+                        
+                        <div class="address-info">
+                            <div class="address-line">Cl. 36 Sur #23 - 15</div>
+                            <div class="address-line">Envigado, Antioquia</div>
+                        </div>
+                        
+                        <a href="#" class="directions-button" id="directionsBtn">
+                            Cómo llegar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- Sección de Recepción -->
+        <section class="reception-section" id="recepcion">
+            <div class="golden-frame fade-in">
+                <h2 class="reception-title">
+                    <span class="cross">✞</span>
+                    Recepción
+                </h2>
+                
+                <div class="reception-content">
+                    <div class="celebration-illustration">
+                        <svg class="celebration-svg" viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Mesa principal -->
+                            <ellipse cx="125" cy="140" rx="80" ry="25" fill="#8b4513" stroke="#c8860d" stroke-width="2"/>
+                            
+                            <!-- Patas de la mesa -->
+                            <rect x="65" y="140" width="8" height="30" fill="#654321"/>
+                            <rect x="180" y="140" width="8" height="30" fill="#654321"/>
+                            
+                            <!-- Mantel -->
+                            <ellipse cx="125" cy="135" rx="85" ry="30" fill="#f0f8ff" stroke="#c8860d" stroke-width="1"/>
+                            
+                            <!-- Pastel central -->
+                            <rect x="105" y="115" width="40" height="25" fill="#fff8dc" stroke="#c8860d" stroke-width="2" rx="5"/>
+                            <rect x="110" y="105" width="30" height="15" fill="#fff" stroke="#c8860d" stroke-width="1" rx="3"/>
+                            <rect x="115" y="95" width="20" height="12" fill="#f0f8ff" stroke="#c8860d" stroke-width="1" rx="2"/>
+                            
+                            <!-- Velas en el pastel -->
+                            <rect x="120" y="85" width="2" height="10" fill="#c8860d"/>
+                            <rect x="128" y="85" width="2" height="10" fill="#c8860d"/>
+                            <circle cx="121" cy="85" r="2" fill="#ffd700"/>
+                            <circle cx="129" cy="85" r="2" fill="#ffd700"/>
+                            
+                            <!-- Decoraciones en la mesa -->
+                            <circle cx="85" cy="125" r="8" fill="#ff69b4" opacity="0.7"/>
+                            <circle cx="165" cy="125" r="8" fill="#ff69b4" opacity="0.7"/>
+                            <circle cx="75" cy="145" r="6" fill="#87ceeb" opacity="0.6"/>
+                            <circle cx="175" cy="145" r="6" fill="#87ceeb" opacity="0.6"/>
+                            
+                            <!-- Copas -->
+                            <path d="M90 120 L90 135 L95 140 L85 140 Z" fill="#e6e6fa" stroke="#c8860d" stroke-width="1"/>
+                            <path d="M160 120 L160 135 L165 140 L155 140 Z" fill="#e6e6fa" stroke="#c8860d" stroke-width="1"/>
+                            
+                            <!-- Platos -->
+                            <circle cx="100" cy="130" r="12" fill="#fff" stroke="#c8860d" stroke-width="1"/>
+                            <circle cx="150" cy="130" r="12" fill="#fff" stroke="#c8860d" stroke-width="1"/>
+                            
+                            <!-- Globos decorativos -->
+                            <circle cx="50" cy="60" r="15" fill="#ff69b4" opacity="0.8"/>
+                            <circle cx="200" cy="60" r="15" fill="#87ceeb" opacity="0.8"/>
+                            <circle cx="45" cy="40" r="12" fill="#ffd700" opacity="0.8"/>
+                            <circle cx="205" cy="40" r="12" fill="#98fb98" opacity="0.8"/>
+                            
+                            <!-- Hilos de globos -->
+                            <line x1="50" y1="75" x2="50" y2="120" stroke="#666" stroke-width="1"/>
+                            <line x1="200" y1="75" x2="200" y2="120" stroke="#666" stroke-width="1"/>
+                            <line x1="45" y1="52" x2="45" y2="120" stroke="#666" stroke-width="1"/>
+                            <line x1="205" y1="52" x2="205" y2="120" stroke="#666" stroke-width="1"/>
+                            
+                            <!-- Cruz decorativa en el fondo -->
+                            <text x="125" y="30" text-anchor="middle" fill="#c8860d" font-size="20" font-family="Georgia">✞</text>
+                            
+                            <!-- Confeti -->
+                            <circle cx="30" cy="90" r="2" fill="#ffd700" opacity="0.7"/>
+                            <circle cx="220" cy="90" r="2" fill="#ff69b4" opacity="0.7"/>
+                            <circle cx="35" cy="110" r="1.5" fill="#87ceeb" opacity="0.8"/>
+                            <circle cx="215" cy="110" r="1.5" fill="#98fb98" opacity="0.8"/>
+                            <circle cx="40" cy="130" r="2" fill="#ffd700" opacity="0.6"/>
+                            <circle cx="210" cy="130" r="2" fill="#ff69b4" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="reception-details">
+                        <p class="reception-subtitle">
+                            Después de la ceremonia, te invitamos a compartir con nosotros 
+                            un momento especial de celebración y alegría.
+                        </p>
+                        
+                        <div class="reception-info">
+                            <div class="info-item">
+                                <span class="info-icon">🏠</span>
+                                <div class="info-title">Lugar</div>
+                                <div class="info-content">
+                                    <div class="venue-name">Casa Familiar</div>
+                                    <div class="address-info">Calle 45 Sur #28-42<br>Envigado, Antioquia</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-icon">🕐</span>
+                                <div class="info-title">Hora</div>
+                                <div class="info-content">4:00 P.M. en adelante</div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-icon">🍰</span>
+                                <div class="info-title">Celebramos con</div>
+                                <div class="info-content">
+                                    Deliciosa comida, pastel de celebración<br>
+                                    y momentos especiales en familia
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="special-note">
+                            <p class="special-note-text">
+                                Tu presencia es el regalo más importante para nosotros.<br>
+                                ¡Acompáñanos a celebrar este momento tan especial!
+                            </p>
+                        </div>
+                        
+                        <a href="#" class="location-button" id="receptionLocationBtn">
+                            Ver ubicación
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SecciÃ³n de Confirmar Asistencia -->
+        <section class="confirmation-section" id="confirmar-asistencia">
+            <div class="golden-frame fade-in">
+                <h2 class="confirmation-title">
+                    Confirmar Asistencia
+                </h2>
+                
+                <div class="confirmation-content">
+                    <div class="confirmation-illustration">
+                        <svg class="confirmation-svg" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Fondo del sobre -->
+                            <path d="M30 60 L170 60 L170 120 L30 120 Z" fill="#f0f8ff" stroke="#c8860d" stroke-width="2"/>
+                            
+                            <!-- Parte superior del sobre -->
+                            <path d="M30 60 L100 90 L170 60" fill="#fff" stroke="#c8860d" stroke-width="2"/>
+                            
+                            <!-- Lí­neas decorativas del sobre -->
+                            <line x1="40" y1="75" x2="160" y2="75" stroke="#c8860d" stroke-width="1" opacity="0.5"/>
+                            <line x1="40" y1="85" x2="140" y2="85" stroke="#c8860d" stroke-width="1" opacity="0.5"/>
+                            <line x1="40" y1="95" x2="120" y2="95" stroke="#c8860d" stroke-width="1" opacity="0.5"/>
+                            
+                            <!-- Corazón decorativo -->
+                            <path d="M100 105 C95 100, 85 100, 85 110 C85 120, 100 130, 100 130 C100 130, 115 120, 115 110 C115 100, 105 100, 100 105 Z" fill="#ff69b4" opacity="0.7"/>
+                            
+                            <!-- Celular -->
+                            <rect x="130" y="30" width="30" height="50" fill="#333" stroke="#c8860d" stroke-width="2" rx="5"/>
+                            <rect x="135" y="35" width="20" height="30" fill="#87ceeb"/>
+                            <circle cx="145" cy="72" r="3" fill="#c8860d"/>
+                            
+                            <!-- Pantalla del celular con WhatsApp -->
+                            <circle cx="140" cy="45" r="4" fill="#25D366"/>
+                            <path d="M138 43 L142 47 L150 39" stroke="white" stroke-width="1" fill="none"/>
+                            
+                            <!-- Globos mensajeros -->
+                            <circle cx="60" cy="35" r="10" fill="#25D366" opacity="0.8"/>
+                            <circle cx="45" cy="25" r="8" fill="#ff69b4" opacity="0.8"/>
+                            <circle cx="75" cy="20" r="6" fill="#ffd700" opacity="0.8"/>
+                            
+                            <!-- Hilos de globos -->
+                            <line x1="60" y1="45" x2="60" y2="55" stroke="#666" stroke-width="1"/>
+                            <line x1="45" y1="33" x2="45" y2="55" stroke="#666" stroke-width="1"/>
+                            <line x1="75" y1="26" x2="75" y2="55" stroke="#666" stroke-width="1"/>
+                            
+                            <!-- Cruz decorativa -->
+                            <text x="100" y="15" text-anchor="middle" fill="#c8860d" font-size="16" font-family="Georgia">✞</text>
+                            
+                            <!-- Estrellitas -->
+                            <text x="20" y="40" text-anchor="middle" fill="#ffd700" font-size="12">âœ¨</text>
+                            <text x="180" y="35" text-anchor="middle" fill="#ffd700" font-size="12">âœ¨</text>
+                            <text x="25" y="130" text-anchor="middle" fill="#ffd700" font-size="12">âœ¨</text>
+                            <text x="175" y="125" text-anchor="middle" fill="#ffd700" font-size="12">âœ¨</text>
+                        </svg>
+                    </div>
+                    
+                    <div class="confirmation-details">
+                        <p class="confirmation-subtitle">
+                            Tu presencia hará que este día sea aún más especial.<br>
+                            Por favor, confirma tu asistencia para poder preparar todo con amor.
+                        </p>
+                        
+                        <div class="confirmation-info">
+                            <div class="attendance-options">
+                                <div class="attendance-option" data-response="SI">
+                                    <div class="option-text">Sí asistiré</div>
+                                    <div class="option-subtitle">¡Estaré ahí para celebrar!</div>
+                                </div>
+                                
+                                <div class="attendance-option" data-response="TALVEZ">
+                                    <div class="option-text">Tal vez pueda</div>
+                                    <div class="option-subtitle">Confirmaré pronto</div>
+                                </div>
+                                
+                                <div class="attendance-option" data-response="NO">
+                                    <div class="option-text">No podré asistir</div>
+                                    <div class="option-subtitle">Pero estaré contigo en espíritu</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="whatsapp-note">
+                            <div class="whatsapp-icon">💚</div>
+                            <p class="whatsapp-text">
+                                Al hacer clic en una opción, se abrirá WhatsApp<br>
+                                con un mensaje predeterminado que puedes personalizar
+                            </p>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <p class="contact-text">
+                                Si tienes alguna pregunta, no dudes en contactarnos.<br>
+                                ¡Esperamos verte en esta celebración tan especial!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Control de música -->
+    <div class="music-control" id="musicControl">
+        <svg class="music-icon" id="musicIcon" viewBox="0 0 24 24">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        </svg>
+    </div>
+
+    <!-- Audio elemento -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/audio/audio.mp3" type="audio/mp3">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
