@@ -59,7 +59,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Función para actualizar la cuenta regresiva
 function updateCountdown() {
-    const eventDate = new Date('2025-11-17T10:00:00').getTime();
+    const eventDate = new Date('2026-03-17T14:00:00').getTime();
     const now = new Date().getTime();
     const distance = eventDate - now;
 
@@ -105,7 +105,7 @@ if (scheduleButton) {
     scheduleButton.addEventListener('click', () => {
         // Crear evento para calendario - formato correcto para agregar al calendario personal
         const eventTitle = 'Primera Comunión - Cristhian Camilo Quintero';
-        const eventDate = '20251117'; // YYYYMMDD
+        const eventDate = '20260317'; // YYYYMMDD
         const startTime = '140000'; // HHMMSS (2:00 PM)
         const endTime = '160000'; // HHMMSS (4:00 PM)
         const eventDetails = 'Ceremonia de Primera Comunión en Parroquia La Purísima Concepción';
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Función para compartir en redes sociales
 function shareEvent(platform) {
     const title = 'Primera Comunión - Cristhian Camilo Quintero';
-    const text = '¡Te invito a mi Primera Comunión! 17 de Noviembre, 2025';
+    const text = '¡Te invito a mi Primera Comunión! 17 de Marzo, 2026';
     const url = window.location.href;
     
     let shareUrl = '';
@@ -345,16 +345,16 @@ function shareEvent(platform) {
                     
                     switch(response) {
                         case 'SI':
-                            message = '¡Hola! Confirmo mi asistencia a la Primera Comunión de Cristhian Camilo Quintero el 17 de Noviembre a las 2:00 PM. ¡Estaré ahí para celebrar! 🎉✞';
+                            message = '¡Hola! Confirmo mi asistencia a la Primera Comunión de Cristhian Camilo Quintero el 17 de Marzo a las 2:00 PM. ¡Estaré ahí para celebrar! 🎉✞';
                             break;
                         case 'TALVEZ':
-                            message = 'Hola, en relación a la Primera Comunión de Cristhian Camilo Quintero el 17 de Noviembre, aún no estoy seguro/a de poder asistir, pero les confirmaré pronto. Gracias por la invitación 🙏✞';
+                            message = 'Hola, en relación a la Primera Comunión de Cristhian Camilo Quintero el 17 de Marzo, aún no estoy seguro/a de poder asistir, pero les confirmaré pronto. Gracias por la invitación 🙏✞';
                             break;
                         case 'NO':
-                            message = 'Hola, lamentablemente no podré asistir a la Primera Comunión de Cristhian Camilo Quintero el 17 de Noviembre, pero estaré con ustedes en espíritu en este día tan especial 💙✞';
+                            message = 'Hola, lamentablemente no podré asistir a la Primera Comunión de Cristhian Camilo Quintero el 17 de Marzo, pero estaré con ustedes en espíritu en este día tan especial 💙✞';
                             break;
                         default:
-                            message = 'Hola, me gustaría confirmar sobre la asistencia a la Primera Comunión de Cristhian Camilo Quintero el 17 de Noviembre a las 2:00 PM.';
+                            message = 'Hola, me gustaría confirmar sobre la asistencia a la Primera Comunión de Cristhian Camilo Quintero el 17 de Marzo a las 2:00 PM.';
                     }
                     
                     // Crear URL de WhatsApp
@@ -382,4 +382,3 @@ function shareEvent(platform) {
             }
 
         });
-
