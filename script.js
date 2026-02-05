@@ -59,7 +59,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Función para actualizar la cuenta regresiva
 function updateCountdown() {
-    const eventDate = new Date('2026-03-17T14:00:00').getTime();
+    const eventDate = new Date('2026-03-22T09:00:00').getTime();
     const now = new Date().getTime();
     const distance = eventDate - now;
 
@@ -104,12 +104,12 @@ const scheduleButton = document.querySelector('.schedule-button');
 if (scheduleButton) {
     scheduleButton.addEventListener('click', () => {
         // Crear evento para calendario - formato correcto para agregar al calendario personal
-        const eventTitle = 'Primera Comunión - Cristhian Camilo Quintero';
-        const eventDate = '20260317'; // YYYYMMDD
-        const startTime = '140000'; // HHMMSS (2:00 PM)
-        const endTime = '160000'; // HHMMSS (4:00 PM)
-        const eventDetails = 'Ceremonia de Primera Comunión en Parroquia La Purísima Concepción';
-        const location = 'Parroquia La Purísima Concepción, Cl. 36 Sur #23-15, Envigado, Antioquia';
+        const eventTitle = 'Primera Comunión - Thomas David Álvarez Castro';
+        const eventDate = '20260322'; // YYYYMMDD
+        const startTime = '090000'; // HHMMSS (9:00 AM)
+        const endTime = '110000'; // HHMMSS (11:00 AM)
+        const eventDetails = 'Ceremonia de Primera Comunión en Parroquia Nuestra Señora del Rosario';
+        const location = 'Parroquia Nuestra Señora del Rosario, Cl 51 49 44, Parque de Bello, Antioquia';
         
         // URL corregida para Google Calendar - agregar al calendario personal
         const googleCalendarUrl = `https://calendar.google.com/calendar/u/0/r/eventedit?text=${encodeURIComponent(eventTitle)}&dates=${eventDate}T${startTime}/${eventDate}T${endTime}&details=${encodeURIComponent(eventDetails)}&location=${encodeURIComponent(location)}`;
@@ -124,8 +124,8 @@ if (directionsBtn) {
     directionsBtn.addEventListener('click', (e) => {
         e.preventDefault();
         
-        // Coordenadas aproximadas de Envigado, Antioquia
-        const address = encodeURIComponent('Cl. 36 Sur #23-15, Envigado, Antioquia, Colombia');
+        // Coordenadas aproximadas de Parque de Bello, Antioquia
+        const address = encodeURIComponent('Cl 51 49 44, Parque de Bello, Antioquia, Colombia');
         const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${address}`;
         
         window.open(googleMapsUrl, '_blank');
@@ -271,8 +271,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Función para compartir en redes sociales
 function shareEvent(platform) {
-    const title = 'Primera Comunión - Cristhian Camilo Quintero';
-    const text = '¡Te invito a mi Primera Comunión! 17 de Marzo, 2026';
+    const title = 'Primera Comunión - Thomas David Álvarez Castro';
+    const text = '¡Te invito a mi Primera Comunión! 22 de Marzo, 2026';
     const url = window.location.href;
     
     let shareUrl = '';
@@ -302,7 +302,7 @@ function shareEvent(platform) {
                 e.preventDefault();
                 
                 // Dirección de la recepción
-                const address = encodeURIComponent('Calle 45 Sur #28-42, Envigado, Antioquia, Colombia');
+                const address = encodeURIComponent('Cra 49 # 51 - 48, Barrio Simón Bolívar, Copacabana, Antioquia, Colombia');
                 const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${address}`;
                 
                 window.open(googleMapsUrl, '_blank');
@@ -329,7 +329,7 @@ function shareEvent(platform) {
                 // Funcionalidad para Confirmación de Asistencia
         document.addEventListener('DOMContentLoaded', () => {
             const attendanceOptions = document.querySelectorAll('.attendance-option');
-            const whatsappNumber = '+573008014847'; // Reemplaza con el número real
+            const whatsappNumber = '+573108915192'; // Reemplaza con el número real
             
             attendanceOptions.forEach(option => {
                 option.addEventListener('click', () => {
@@ -345,16 +345,16 @@ function shareEvent(platform) {
                     
                     switch(response) {
                         case 'SI':
-                            message = '¡Hola! Confirmo mi asistencia a la Primera Comunión de Cristhian Camilo Quintero el 17 de Marzo a las 2:00 PM. ¡Estaré ahí para celebrar! 🎉✞';
+                            message = '¡Hola! Confirmo mi asistencia a la Primera Comunión de Thomas David Álvarez Castro el 22 de Marzo a las 9:00 AM. ¡Estaré ahí para celebrar! 🎉✞';
                             break;
                         case 'TALVEZ':
-                            message = 'Hola, en relación a la Primera Comunión de Cristhian Camilo Quintero el 17 de Marzo, aún no estoy seguro/a de poder asistir, pero les confirmaré pronto. Gracias por la invitación 🙏✞';
+                            message = 'Hola, en relación a la Primera Comunión de Thomas David Álvarez Castro el 22 de Marzo, aún no estoy seguro/a de poder asistir, pero les confirmaré pronto. Gracias por la invitación 🙏✞';
                             break;
                         case 'NO':
-                            message = 'Hola, lamentablemente no podré asistir a la Primera Comunión de Cristhian Camilo Quintero el 17 de Marzo, pero estaré con ustedes en espíritu en este día tan especial 💙✞';
+                            message = 'Hola, lamentablemente no podré asistir a la Primera Comunión de Thomas David Álvarez Castro el 22 de Marzo, pero estaré con ustedes en espíritu en este día tan especial 💙✞';
                             break;
                         default:
-                            message = 'Hola, me gustaría confirmar sobre la asistencia a la Primera Comunión de Cristhian Camilo Quintero el 17 de Marzo a las 2:00 PM.';
+                            message = 'Hola, me gustaría confirmar sobre la asistencia a la Primera Comunión de Thomas David Álvarez Castro el 22 de Marzo a las 9:00 AM.';
                     }
                     
                     // Crear URL de WhatsApp
@@ -381,4 +381,188 @@ function shareEvent(platform) {
                 observer.observe(confirmationSection);
             }
 
+        });
+
+        // ============================================
+        // CONFIGURACIÓN DEL CARRUSEL
+        // ============================================
+
+        class ElegantCarousel {
+            constructor() {
+                this.track = document.getElementById('carouselTrack');
+                this.slides = Array.from(this.track ? this.track.children : []);
+                this.nextButton = document.getElementById('nextBtn');
+                this.prevButton = document.getElementById('prevBtn');
+                this.indicatorsContainer = document.getElementById('carouselIndicators');
+                this.thumbnailsContainer = document.getElementById('carouselThumbnails');
+                this.currentIndex = 0;
+                this.isAnimating = false;
+                
+                this.init();
+            }
+            
+            init() {
+                if (!this.track || this.slides.length === 0) return;
+                
+                // Crear indicadores
+                this.createIndicators();
+                
+                // Crear miniaturas
+                this.createThumbnails();
+                
+                // Configurar event listeners
+                this.setupEventListeners();
+                
+                // Auto-play (opcional)
+                this.startAutoPlay();
+                
+                // Actualizar estado inicial
+                this.updateCarousel();
+            }
+            
+            createIndicators() {
+                this.slides.forEach((_, index) => {
+                    const indicator = document.createElement('div');
+                    indicator.classList.add('indicator');
+                    if (index === 0) indicator.classList.add('active');
+                    indicator.addEventListener('click', () => this.goToSlide(index));
+                    this.indicatorsContainer.appendChild(indicator);
+                });
+                this.indicators = Array.from(this.indicatorsContainer.children);
+            }
+            
+            createThumbnails() {
+                this.slides.forEach((slide, index) => {
+                    const thumbnail = document.createElement('div');
+                    thumbnail.classList.add('thumbnail');
+                    if (index === 0) thumbnail.classList.add('active');
+                    
+                    const img = slide.querySelector('.carousel-image');
+                    if (img) {
+                        const thumbImg = document.createElement('img');
+                        thumbImg.src = img.src;
+                        thumbImg.alt = img.alt;
+                        thumbnail.appendChild(thumbImg);
+                    }
+                    
+                    thumbnail.addEventListener('click', () => this.goToSlide(index));
+                    this.thumbnailsContainer.appendChild(thumbnail);
+                });
+                this.thumbnails = Array.from(this.thumbnailsContainer.children);
+            }
+            
+            setupEventListeners() {
+                this.nextButton?.addEventListener('click', () => this.nextSlide());
+                this.prevButton?.addEventListener('click', () => this.prevSlide());
+                
+                // Touch/swipe support
+                let touchStartX = 0;
+                let touchEndX = 0;
+                
+                this.track.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                });
+                
+                this.track.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    this.handleSwipe(touchStartX, touchEndX);
+                });
+                
+                // Keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') this.prevSlide();
+                    if (e.key === 'ArrowRight') this.nextSlide();
+                });
+            }
+            
+            handleSwipe(startX, endX) {
+                const threshold = 50;
+                const diff = startX - endX;
+                
+                if (Math.abs(diff) > threshold) {
+                    if (diff > 0) {
+                        this.nextSlide();
+                    } else {
+                        this.prevSlide();
+                    }
+                }
+            }
+            
+            goToSlide(index) {
+                if (this.isAnimating || index === this.currentIndex) return;
+                
+                this.isAnimating = true;
+                this.currentIndex = index;
+                this.updateCarousel();
+                
+                setTimeout(() => {
+                    this.isAnimating = false;
+                }, 600);
+            }
+            
+            nextSlide() {
+                const nextIndex = (this.currentIndex + 1) % this.slides.length;
+                this.goToSlide(nextIndex);
+            }
+            
+            prevSlide() {
+                const prevIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+                this.goToSlide(prevIndex);
+            }
+            
+            updateCarousel() {
+                // Mover el track
+                const offset = -this.currentIndex * 100;
+                this.track.style.transform = `translateX(${offset}%)`;
+                
+                // Actualizar clases activas
+                this.slides.forEach((slide, index) => {
+                    slide.classList.toggle('active', index === this.currentIndex);
+                });
+                
+                this.indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === this.currentIndex);
+                });
+                
+                this.thumbnails.forEach((thumbnail, index) => {
+                    thumbnail.classList.toggle('active', index === this.currentIndex);
+                });
+                
+                // Actualizar botones
+                this.updateButtons();
+            }
+            
+            updateButtons() {
+                // Opcional: deshabilitar botones en los extremos
+                // this.prevButton.disabled = this.currentIndex === 0;
+                // this.nextButton.disabled = this.currentIndex === this.slides.length - 1;
+            }
+            
+            startAutoPlay(interval = 5000) {
+                this.autoPlayInterval = setInterval(() => {
+                    this.nextSlide();
+                }, interval);
+                
+                // Pausar auto-play cuando el usuario interactúa
+                this.track.addEventListener('mouseenter', () => this.pauseAutoPlay());
+                this.track.addEventListener('mouseleave', () => this.resumeAutoPlay(interval));
+            }
+            
+            pauseAutoPlay() {
+                if (this.autoPlayInterval) {
+                    clearInterval(this.autoPlayInterval);
+                    this.autoPlayInterval = null;
+                }
+            }
+            
+            resumeAutoPlay(interval) {
+                if (!this.autoPlayInterval) {
+                    this.startAutoPlay(interval);
+                }
+            }
+        }
+
+        // Inicializar el carrusel cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', () => {
+            new ElegantCarousel();
         });

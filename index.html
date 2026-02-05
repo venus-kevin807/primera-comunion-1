@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Comunión - Cristhian Camilo Quintero</title>
+    <title>Mi Primera Comunión - Thomas David Álvarez Castro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,6 +27,7 @@
         <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#fecha">Fecha</a></li>
+            <li><a href="#galeria">Galería</a></li>
             <li><a href="#cuenta-regresiva">Cuenta regresiva</a></li>
             <li><a href="#ceremonia">Ceremonia</a></li>
             <li><a href="#recepcion">Recepción</a></li>
@@ -51,12 +52,12 @@
                     En mis ojos brilla una luz porque recibo en mi<br>
                     corazón con todo mi amor al niño Jesús
                 </p>
-                <h2 class="name">Cristhian Camilo Quintero</h2>
+                <h2 class="name">Thomas David Álvarez Castro</h2>
                 
                 <!-- Foto del niño -->
                 <div class="fade-in-delay">
                     <div class="photo-frame">
-                        <img src="Assets/imagenes/img1.png" alt="Foto de Cristhian Camilo Quintero" class="child-photo">
+                        <img src="Assets/imagenes/5.png" alt="Foto de Thomas David Álvarez Castro" class="child-photo">
                     </div>
                 </div>
             </div>
@@ -73,14 +74,80 @@
                                 <span class="year">2026</span>
                             </div>
                             <div class="day-circle">
-                                <span class="day-label">Sabado</span>
-                                <span class="day-number">17</span>
+                                <span class="day-label">Domingo</span>
+                                <span class="day-number">22</span>
                             </div>
                         </div>
                     </div>
                     <div class="schedule-button">
                         <span class="schedule-text">Agendar</span>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Galería de Recuerdos -->
+        <section class="gallery-section" id="galeria">
+            <div class="section-divider">
+                <span class="divider-icon">✞</span>
+            </div>
+
+            <h2 class="elegant-section-title">Galería de Recuerdos</h2>
+
+            <div class="carousel-container">
+                <div class="carousel-elegant">
+                    <button class="carousel-btn prev-btn" id="prevBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+
+                    <div class="carousel-track-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-slide active">
+                                <div class="carousel-image-wrapper">
+                                    <img src="Assets/imagenes/4.png" alt="Recuerdo 1" class="carousel-image">
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="carousel-image-wrapper">
+                                    <img src="Assets/imagenes/6.png" alt="Recuerdo 2" class="carousel-image">
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="carousel-image-wrapper">
+                                    <img src="Assets/imagenes/3.png" alt="Recuerdo 3" class="carousel-image">
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="carousel-image-wrapper">
+                                    <img src="Assets/imagenes/5.png" alt="Recuerdo 4" class="carousel-image">
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="carousel-image-wrapper">
+                                    <img src="Assets/imagenes/2.png" alt="Recuerdo 5" class="carousel-image">
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="carousel-image-wrapper">
+                                    <img src="Assets/imagenes/7.png" alt="Recuerdo 6" class="carousel-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn next-btn" id="nextBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="carousel-indicators" id="carouselIndicators">
+                </div>
+
+                <div class="carousel-thumbnails" id="carouselThumbnails">
                 </div>
             </div>
         </section>
@@ -170,16 +237,16 @@
                     </div>
                     
                     <div class="ceremony-details">
-                        <div class="time-info">2:00 P.M.</div>
+                        <div class="time-info">9:00 A.M.</div>
                         
                         <div class="location-label">Lugar:</div>
                         
-                        <div class="church-name">Parroquia La Purísima Concepción</div>
-                        <div class="church-subtitle">Loma el Chocho</div>
+                        <div class="church-name">Parroquia Nuestra Señora del Rosario</div>
+                        <div class="church-subtitle">Parque de Bello</div>
                         
                         <div class="address-info">
-                            <div class="address-line">Cl. 36 Sur #23 - 15</div>
-                            <div class="address-line">Envigado, Antioquia</div>
+                            <div class="address-line">Cl 51 49 44</div>
+                            <div class="address-line">Parque de Bello, Antioquia</div>
                         </div>
                         
                         <a href="#" class="directions-button" id="directionsBtn">
@@ -272,8 +339,8 @@
                                 <span class="info-icon">🏠</span>
                                 <div class="info-title">Lugar</div>
                                 <div class="info-content">
-                                    <div class="venue-name">Casa Familiar</div>
-                                    <div class="address-info">Calle 45 Sur #28-42<br>Envigado, Antioquia</div>
+                                    <div class="venue-name">Salón Social</div>
+                                    <div class="address-info">Barrio Simón Bolívar<br>Cra 49 # 51 - 48, Segundo Piso<br>Copacabana</div>
                                 </div>
                             </div>
                             
